@@ -35,6 +35,12 @@ const Login:React.FC<LoginProps> = () => {
                 Forgot Password?
             </a>
         </button>
+        <div className='text-sm font-medium text-gray-300'>
+            No Registered? {" "}
+            <a href='#' className='text-blue-700 hover:underline'>
+                Create account
+            </a>
+        </div>
     </form>)
 }
 export default Login;
