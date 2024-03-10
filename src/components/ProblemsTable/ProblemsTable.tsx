@@ -34,7 +34,7 @@ const ProblemsTable: React.FC<ProblemsTableProps> = () => {
                         </td>
                         <td className={"px-6 py-4"}>
                             {doc.videoId ? (
-                            <AiFillYoutube fontSize={"18"} className='cursor-pointer hover:text-red-500'/>
+                            <AiFillYoutube fontSize={"28"} className='cursor-pointer hover:text-red-500'/>
                             ) : (<p className='text-gray-400'>Coming soon</p>)}
                         </td>
                     </tr>
