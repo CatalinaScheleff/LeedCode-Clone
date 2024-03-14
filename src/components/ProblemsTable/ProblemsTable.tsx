@@ -1,6 +1,6 @@
 import { problems } from '@/mockProblems/problems.';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsCheckCircle } from 'react-icons/bs'
 import { AiFillYoutube } from 'react-icons/ai'
 import YouTube from 'react-youtube';
@@ -23,6 +23,15 @@ const ProblemsTable: React.FC<ProblemsTableProps> = () => {
             videoId: ""
         })
     }
+
+    useEffect(() => {
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === "Escape") closeModal();
+        }
+        window.addEventListener("keydown" , handleEsc);
+
+        return () => window.removeEventListener("keydown", handleEsc)
+    }, [])
 
     return (
         <>
