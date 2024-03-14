@@ -46,7 +46,7 @@ const Topbar: React.FC<TopbarProps> = () => {
 							</div>
                         </div>
                     )}
-                    <Logout/>
+                    {user && <Logout/>}
                 </div>
             </div>
         </nav>
