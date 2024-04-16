@@ -8,6 +8,7 @@ import { authModalState } from '@/atoms/authModalAtom';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 import { BsList } from 'react-icons/bs';
+import Timer from '../Timer/Timer';
 
 type TopbarProps = {
     problemPage? : boolean;
@@ -61,6 +62,7 @@ const Topbar: React.FC<TopbarProps> = ({problemPage}) => {
                             <button className='bg-dark-fill-3 py-1 px-2 cursor-pointer rounded'>Sign In</button>
                         </Link>
                     )}
+                    {problemPage && <Timer/>}
                     {user && (
                         <div className='cursor-pointer group relative'>
                             <Image src='/avatar.png' alt='user profile img' width={30} height={30} className='rounded-full'/>
