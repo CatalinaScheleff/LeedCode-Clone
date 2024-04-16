@@ -63,7 +63,7 @@ const Topbar: React.FC<TopbarProps> = ({problemPage}) => {
                     )}
                     {user && (
                         <div className='cursor-pointer group relative'>
-                            <img src='/avatar.png' alt='user profile img' className='h-8 w-8 rounded-full'/>
+                            <Image src='/avatar.png' alt='user profile img' width={30} height={30} className='rounded-full'/>
                             <div
 								className='absolute top-10 left-2/4 -translate-x-2/4  mx-auto bg-dark-layer-1 text-brand-orange p-2 rounded shadow-lg 
 								z-40 group-hover:scale-100 scale-0 
