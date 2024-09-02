@@ -1,12 +1,14 @@
+import { Problem } from '@/utils/types/problem';
 import React from 'react';
 import { AiFillLike, AiOutlineLoading3Quarters, AiFillDislike, AiFillStar } from 'react-icons/ai';
 import { BsCheck2Circle } from 'react-icons/bs';
+import {TiStarOutline} from 'react-icons/ti'
 
 type ProblemDescriptionProps = {
-    
+    problem:Problem
 };
 
-const ProblemDescription:React.FC<ProblemDescriptionProps> = () => {
+const ProblemDescription:React.FC<ProblemDescriptionProps> = ({problem}) => {
     
     return (
         <div className='bg-dark-layer-1'>
